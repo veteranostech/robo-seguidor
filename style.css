@@ -1,0 +1,299 @@
+:root {
+  --cor-primaria: #0077cc;
+  --cor-secundaria: #FFFFFF;
+  --cor-texto: #333;
+  --cor-header: #222;
+}
+
+/* === Layout geral === */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  background-color: var(--cor-secundaria);
+  color: var(--cor-texto);
+}
+
+header {
+  background-color: var(--cor-header);
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a.active {
+  color: #fff;
+  background: #007bff;
+  border-radius: 4px;
+  padding: 6px 12px;
+}
+
+main {
+  padding: 40px;
+}
+
+.intro, .projeto {
+  text-align: center;
+  max-width: 800px;
+  margin: auto;
+}
+
+footer {
+  background-color: var(--cor-header);
+  color: white;
+  text-align: center;
+  padding: 10px;
+  margin-top: 40px;
+}
+
+/* === Botões === */
+button,
+input[type="submit"] {
+  padding: 10px 20px;
+  background-color: var(--cor-primaria);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover,
+input[type="submit"]:hover {
+  background-color: #005fa3;
+}
+
+/* === Formulários === */
+form {
+  background-color: white;
+  padding: 20px;
+  margin: 30px auto;
+  max-width: 600px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"],
+input[type="number"],
+select {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+/* === Tabelas === */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+  margin-top: 30px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.05);
+}
+
+th, td {
+  padding: 12px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+th {
+  background-color: var(--cor-primaria);
+  color: white;
+}
+
+/* === Cards de integrantes === */
+.cards-container {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  padding: 0 20px;
+}
+
+.card {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  width: 180px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+  flex-shrink: 0;
+  animation: fadeInUp 0.6s ease forwards;
+  opacity: 0;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  transition: transform 0.3s;
+}
+
+.card img:hover {
+  transform: scale(1.1);
+}
+
+.card h3 {
+  font-size: 16px;
+  margin: 10px 0 5px;
+}
+
+.card p {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.card a {
+  display: inline-block;
+  color: var(--cor-primaria);
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.card a:hover {
+  text-decoration: underline;
+}
+
+/* === Bordas por função === */
+.card.programador {
+  border-top: 5px solid #008000;
+}
+
+.card.desenvolvedor {
+  border-top: 5px solid #0077cc;
+}
+
+.card.cervejeiro {
+  border-top: 5px solid #FF0000;
+}
+
+.card.documentacao {
+  border-top: 5px solid #ffc107;
+}
+
+.card.eletronica {
+  border-top: 5px solid #964B00;
+}
+
+/* === Links sociais === */
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.social-links a {
+  color: var(--cor-primaria);
+  font-size: 20px;
+  transition: color 0.3s;
+}
+
+.social-links a:hover {
+  color: #005fa3;
+}
+
+/* === Login/Cadastro === */
+.login-container,
+.cadastro-container {
+  max-width: 400px;
+  margin: 40px auto;
+  background-color: white;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.login-container h2,
+.cadastro-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: var(--cor-texto);
+}
+
+/* === Responsividade === */
+@media (max-width: 768px) {
+  nav ul li {
+    display: block;
+    margin: 10px 0;
+  }
+
+  main {
+    padding: 20px;
+  }
+
+  .cards-container {
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    padding-bottom: 10px;
+  }
+
+  .card {
+    flex: 0 0 auto;
+  }
+}
+
+/* Melhor Responsividade na Galeria */
+.galeria-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+}
+
+.galeria-container img {
+  max-width: 100%;
+  height: auto;
+  flex: 1 1 220px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* === Animações === */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* Animação para o modal do JavaScript */
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.95);}
+  to { opacity: 1; transform: scale(1);}
+}

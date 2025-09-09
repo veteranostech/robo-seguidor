@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <title>Painel Administrativo</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Painel Administrativo</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="projeto.html">Projeto</a></li>
+        <li><a href="equipe.html">Equipe</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="login.php">Login</a></li>
+        <li><a href="painel.html" class="active">Painel</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Bem-vindo, <?php echo $_SESSION['usuario']; ?>!</h2>
+      <p>Aqui você pode gerenciar postagens, editar conteúdo e acompanhar o progresso do projeto.</p>
+      <ul>
+        <li><a href="#">Criar nova postagem</a></li>
+        <li><a href="#">Editar equipe</a></li>
+        <li><a href="#">Ver estatísticas</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 - Equipe Veteranos Tech</p>
+  </footer>
+</body>
+</html>

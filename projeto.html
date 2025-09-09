@@ -1,0 +1,74 @@
+// <?php include('protecao.php'); ?>  
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sobre o Projeto</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Robô Seguidor de Linha</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="projeto.html" class="active">Projeto</a></li>
+        <li><a href="equipe.html">Equipe</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="login.php">Login</a></li>
+        <li><a href="painel.html">Painel</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="projeto">
+      <h2>Sobre o Projeto</h2>
+      <p>
+        Nosso robô seguidor de linha foi desenvolvido para detectar e seguir trajetos definidos por faixas pretas sobre superfícies claras. Ele utiliza sensores infravermelhos, motores DC e uma estrutura leve para garantir precisão e velocidade.
+      </p>
+
+      <h3>🔩 Componentes Utilizados</h3>
+      <ul>
+        <li>2 Sensores infravermelhos</li>
+        <li>2 Motores DC</li>
+        <li>1 Placa Arduino Uno</li>
+        <li>1 Ponte H L298N</li>
+        <li>Chassi com rodas</li>
+        <li>Bateria 9V</li>
+      </ul>
+
+      <h3>⚙️ Funcionamento</h3>
+      <p>
+        Os sensores IR detectam a linha preta no chão. Quando o robô se desvia, os sensores enviam sinais para o Arduino, que ajusta os motores para corrigir a rota. A ponte H controla a direção e velocidade dos motores.
+      </p>
+
+      <figure>
+        <img src="img/bob.jpeg" alt="Robô seguidor de linha com sensores IR e estrutura montada" width="100%" />
+        <figcaption>Imagem real do robô seguidor de linha desenvolvido pela equipe.</figcaption>
+      </figure>
+    </section>
+
+    <section class="galeria">
+      <h2>📸 Galeria de Fotos</h2>
+      <div class="galeria-container">
+        <img src="img/foto1.jpeg" alt="Montagem do robô" />
+        <img src="img/foto2.jpeg" alt="Testes de funcionamento" />
+        <img src="img/foto3.jpeg" alt="Apresentação do projeto" />
+      </div>
+    </section>
+
+    <section class="videos">
+      <h2>🎥 Vídeos de Demonstração</h2>
+      <div class="video-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/SEU_VIDEO_AQUI" title="Demonstração do Robô" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 - Equipe Veteranos Tech</p>
+  </footer>
+</body>
+</html>
