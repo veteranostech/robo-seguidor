@@ -1,4 +1,4 @@
-# robo-bob
+# Robô-bob
 
 ## Projeto Robô Segue Linha - "Bob"
 
@@ -40,3 +40,4 @@ Durante o processo, enfrentamos desafios logísticos e de coordenação, comuns 
 
 
 Agradecemos o interesse em nosso projeto!
+
