@@ -126,6 +126,7 @@ th {
 /* === Cards de integrantes === */
 .cards-container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   gap: 15px;
   flex-wrap: wrap;
@@ -298,4 +299,5 @@ th {
   to { opacity: 1; transform: scale(1);}
 
 }
+
 
