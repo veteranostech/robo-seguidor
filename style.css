@@ -256,7 +256,7 @@ th {
 
   .cards-container {
     overflow-x: auto;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     padding-bottom: 10px;
   }
 
@@ -298,3 +298,4 @@ th {
   to { opacity: 1; transform: scale(1);}
 
 }
+
