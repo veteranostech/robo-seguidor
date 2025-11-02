@@ -126,12 +126,25 @@ th {
 /* === Cards de integrantes === */
 .cards-container {
   display: flex;
-  flex-direction: column;
+  flex-direction: row; /* horizontal por padrão */
   justify-content: center;
-  gap: 15px;
+  gap: 20px;
   flex-wrap: wrap;
   margin-top: 30px;
   padding: 0 20px;
+}
+
+/* Layout vertical no mobile */
+@media (max-width: 768px) {
+  .cards-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 300px;
+  }
 }
 
 .card {
